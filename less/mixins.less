@@ -1,1 +1,17 @@
 // Mixins Here
+.mobile-font-size(@font-size, @paddingL, @paddingR) {
+  font-size: @font-size;
+  padding-left: @paddingL;
+  padding-right: @paddingR;
+}
+
+.btn(@bgColor, @textColor) {
+  background: @bgColor;
+  color: @textColor;
+  padding: 15px 5px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 140px;
+  font-size: 1.75rem;
+}
+
