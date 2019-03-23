@@ -178,6 +178,7 @@ html,
 body {
   font-family: 'Ubuntu', sans-serif;
   color: #5e6164;
+  padding-top: 61px;
 }
 h1,
 h2,
@@ -216,7 +217,12 @@ nav a {
   justify-content: space-between;
   align-items: center;
   padding: 2rem 0px;
-  background: #f1f1f1;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 0.95;
 }
 .nav-links {
   display: flex;
@@ -229,6 +235,18 @@ nav a {
   font-family: 'Russo One';
   font-size: 4rem;
   padding: 1.4rem 0px 1.4rem 0px;
+}
+.logo:hover {
+  animation-name: example;
+  animation-duration: 2s;
+}
+@keyframes example {
+  from {
+    color: rgba(4, 0, 255, 0.342);
+  }
+  to {
+    color: #0099ff;
+  }
 }
 footer {
   color: #22283B;
