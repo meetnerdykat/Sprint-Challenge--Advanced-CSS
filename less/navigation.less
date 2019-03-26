@@ -1,1 +1,45 @@
 // Navigation code here
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0px;
+  .navbar-fixed(0.95);
+}
+
+.nav-links {
+  display: flex;
+}
+
+.nav-item a {
+  font-size: 1.75rem;
+  padding: 15px 15px;
+}
+
+.logo {
+  // width: 175px;
+  font-family: 'Russo One';
+  font-size: 4rem;
+  padding: 1.4rem 0px 1.4rem 0px;
+}
+
+.logo:hover {
+  animation-name: example;
+  animation-duration: 2s;
+}
+
+@keyframes example {
+  from {
+    color: rgba(4, 0, 255, 0.342);
+  }
+  to {
+    color: rgb(0, 153, 255);
+  }
+}

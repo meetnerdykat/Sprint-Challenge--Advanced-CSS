@@ -1,17 +1,20 @@
 // Home Content
 
 .home {
-
   .intro {
+
+    img {
+      margin-bottom: 1.4rem;
+      border-radius: 5px;
+    }
 
     h2 {
       padding: 15px;
     }
 
     p {
-      padding:0 15px;
+      padding: 0 15px;
     }
-  
   }
 
   .space-images {
@@ -58,13 +61,18 @@
       }
 
       .btn {
+        .btn(@ebony-clay, @wild-sand);
+      }
+
+      .btn:hover {
+        .btn(@river-bend, @border-real);
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+
       img {
         width: 100%;
         height: auto;
@@ -72,4 +80,4 @@
       }
     }
   }
-}// home
+} // home
